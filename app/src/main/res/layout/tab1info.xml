@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:id="@+id/infotable"
+        android:layout_width="395dp"
+        android:layout_height="569dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/info_addr"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/info_addr_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:paddingLeft="10dp"
+                android:text="Address"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_addr_content"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+
+                android:paddingRight="10dp"
+                android:text="Address"
+                android:textColor="#646464"
+                android:textSize="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info_phone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/info_phone_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+
+                android:paddingLeft="10dp"
+                android:text="Phone"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_phone_content"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:autoLink="phone"
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:text="805-886-4259"
+                android:textSize="17dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info_price"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/info_price_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+
+                android:paddingLeft="10dp"
+                android:text="Price Level"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_price_content"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+
+                android:paddingRight="10dp"
+                android:text="$$$"
+                android:textColor="#646464"
+                android:textSize="17dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/info_rate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/info_rate_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Rating"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/info_rate_content"
+                android:layout_width="238dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="15dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/info_google"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/info_google_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+
+                android:paddingLeft="10dp"
+                android:text="Google Page"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_google_content"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:autoLink="web"
+
+                android:clickable="true"
+                android:paddingRight="10dp"
+                android:text="@string/testlink"
+                android:textSize="17dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/info_web"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/info_web_label"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+
+                android:paddingLeft="10dp"
+                android:text="Website"
+                android:textColor="#646464"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_web_content"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:autoLink="web"
+                android:clickable="true"
+
+                android:paddingRight="10dp"
+                android:text="www.google.com"
+                android:textSize="17dp" />
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

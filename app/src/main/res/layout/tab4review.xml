@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+    <Spinner
+        android:id="@+id/review_type"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/reviewtype"
+        app:layout_constraintEnd_toStartOf="@+id/review_type2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/review_order"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/revieworder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/review_type"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/review_view"
+        android:layout_width="395dp"
+        android:layout_height="492dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_type">
+
+        <TextView
+            android:id="@+id/review_norecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="160dp"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="164dp"
+            android:text="No reviews"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/review_content"
+            android:layout_width="379dp"
+            android:layout_height="470dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

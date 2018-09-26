@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/search_keywordlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keyword"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/searchwarn1"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:text="Please enter mandatary field."
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/keywordinput"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter keyword"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/search_catelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Category"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/catespinner"
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+        android:entries="@array/cate_res" />
+
+    <TextView
+        android:id="@+id/search_distancelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Distance (in miles)"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/distanceinput"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter distance (default 10 miles)"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/search_fromlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="From"
+        android:textSize="16dp" />
+
+    <RadioGroup
+        android:id="@+id/locationgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/cl_one"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Current location" />
+
+        <RadioButton
+            android:id="@+id/ol_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="Other. Specify location" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/searchwarn2"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:text="Please enter mandatary field."
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Type in the Location"
+        android:visibility="visible" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="185dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="1dp"
+            android:text="@android:string/search_go"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="185dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="1dp"
+            android:text="clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

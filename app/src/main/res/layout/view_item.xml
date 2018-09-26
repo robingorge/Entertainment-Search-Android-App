@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="77dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/itemimage"
+        android:gravity="center_vertical"
+        android:textAlignment="viewStart"
+        android:textColor="#646464"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemaddress"
+        android:layout_width="255dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/itemimage"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#b4b4b4" />
+
+    <ImageView
+        android:id="@+id/itemfav"
+        android:layout_width="78dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemname"
+        android:layout_toRightOf="@+id/itemname"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        app:srcCompat="@drawable/heart_outline_black" />
+
+
+</RelativeLayout>
+

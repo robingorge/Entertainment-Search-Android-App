@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:id="@+id/image_frame"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/greview_proimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/greview_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/greview_user"
+        android:layout_below="@+id/greview_user"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="15dp" />
+
+    <TextView
+        android:id="@+id/greview_user"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/greview_time"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/greview_rating"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/greview_content"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/image_frame"
+        android:layout_below="@+id/greview_time"
+        android:text="TextView" />
+
+
+</RelativeLayout>
+
